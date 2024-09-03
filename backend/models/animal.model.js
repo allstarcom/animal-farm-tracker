@@ -6,6 +6,8 @@ const animalSchema = new mongoose.Schema({
   vaccinationStatus: { type: String, enum: ['Fully vaccinated', 'Partially vaccinated', 'Unvaccinated'], required: true },
   vaccinationType: { type: String, enum: ['Influenza', 'Rabies', 'Parvovirus'], required: true },
   section: { type: String, required: true },
+  animalType: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Animal', animalSchema);

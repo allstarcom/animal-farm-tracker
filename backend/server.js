@@ -21,7 +21,7 @@ db.once('open', () => {
 
   app.use("/animals", require('./routes/animal.routes.js'));
 
-  app.listen(3000, () => {
+  app.listen(3001, () => {
     console.log('server running on port 3000')
   });
 });
