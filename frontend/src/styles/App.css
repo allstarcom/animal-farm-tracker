@@ -1,0 +1,18 @@
+/* App Container */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* App Content */
+.appContent {
+  display: flex;
+  flex: 1;
+}
+
+/* Main Content */
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
