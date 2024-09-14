@@ -12,7 +12,6 @@ export default function useFarmData() {
 
             try {
                 const response = await fetchFarms();
-                console.log(response)
                 setFarms(response.data);
             } catch (error) {
                 console.error('Failed to fetch farms:', error);
@@ -24,6 +23,8 @@ export default function useFarmData() {
     }, []);
 
 
+
+    
     return {
         farmList
     }

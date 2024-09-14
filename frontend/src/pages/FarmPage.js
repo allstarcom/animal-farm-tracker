@@ -3,7 +3,7 @@ import React from 'react';
 import FarmList from '../components/FarmList';
 
 export default function FarmPage() {
-    return (
+    return (   
         <FarmList />
     );
 }

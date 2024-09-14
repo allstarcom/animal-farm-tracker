@@ -4,9 +4,9 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles((theme) => ({
   pageContainer: {
     padding: '20px',
-    backgroundColor: '#f5f5f5',
     display: 'flex',
     flexDirection: 'column',
+    margin: '0 auto'
   },
   farmListContainer: {
     display: 'flex',
