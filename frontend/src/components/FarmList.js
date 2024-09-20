@@ -60,22 +60,6 @@ export default function FarmList() {
     return (
         <Box>
             <DynamicTable columns={columns} data={farmList} />
-            {/* <Box className={classes.farmListContainer}>
-                {farmList.map((farm) => (
-                    <Link to={`/farms/${farm._id}`} key={farm._id} style={{ textDecoration: 'none' }}>
-                        <Card key={farm._id} className={classes.farmCard}>
-                            <CardContent>
-                                <Typography variant="h5" className={classes.farmName}>
-                                    {farm.name}
-                                </Typography>
-                                <Typography variant="body2" className={classes.farmLocation}>
-                                    {farm.location || 'No location specified'}
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Link>
-                ))}
-            </Box> */}
         </Box>
     );
 }

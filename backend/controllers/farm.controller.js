@@ -5,7 +5,7 @@ const getAllFarms = async (req, res) => {
         res.json(farms);
     } catch (err) {
         console.log(err)
-        //errorHandler(err, req, res, next);
+        errorHandler(err, req, res, next);
     }
 };
 

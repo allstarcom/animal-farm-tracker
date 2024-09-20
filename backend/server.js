@@ -3,11 +3,10 @@ const cors = require('cors');
 const app = express()
 
 app.use(express.json());
-const mongoose = require('mongoose');
-const dbConfig = require('./config/db.config.js');
-
 app.use(cors()); // Enable CORS for all routes
 
+const mongoose = require('mongoose');
+const dbConfig = require('./config/db.config.js');
 
 mongoose.connect(dbConfig.db, {
     useNewUrlParser: true,
@@ -27,7 +26,7 @@ db.once('open', () => {
     app.use("/farms", require('./routes/farm.routes.js'));
 
 
-    app.listen(3001, () => {
-        console.log('server running on port 3001')
+    app.listen(5001, () => {
+        console.log('server running on port 5001')
     });
 });
